@@ -10,6 +10,9 @@ RUN pip install -qr /tmp/requirements.txt
 ADD ./webapp /opt/webapp/
 WORKDIR /opt/webapp
 
+RUN conda install opencv
+RUN conda install Pillow
+RUN conda install scikit-learn
 RUN while read requirement; do conda install --yes $requirement; done < requirements.txt
 
-CMD gunicorn --bind 0.0.0.0:$PORT wsgi
+CMD gunicorn app:app
