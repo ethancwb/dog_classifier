@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="DogClassifier">
+<head>
+    <meta charset="UTF-8">
+    <title>Dog classifier</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+<div class="homepage-container">
+    <img src="static/source_image/homepage-logo.png" class="homepage-logo"></img>
+    <img src="static/source_image/Dog-Breed-Classifier.png" class="top-logo-homepage"></img>
+    <div class="main-container">
+        <div class="content-container">
+            <form class="form-group" action="/result" method="post" enctype="multipart/form-data">
+                <div class="file-upload">
+                    <label for="upload" class="file-upload__label">Upload file</label>
+                    <input id="upload" class="file-upload__input btn-block" type="file" name="image">
+                </div>
+                <input type="submit" value="Upload your image" class="btn btn-primary btn-block">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<!DOCTYPE html>
+<html lang="en" ng-app="DogClassifier">
+<head>
+    <meta charset="UTF-8">
+    <title>Dog classifier</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+<div class="homepage-container">
+    <img src="static/source_image/homepage-logo.png" class="homepage-logo"></img>
+    <img src="static/source_image/Dog-Breed-Classifier.png" class="top-logo-homepage"></img>
+    <div class="main-container">
+        <div class="content-container">
+            {% if filename %}
+            <img src="{{filename}}">
+            <h3>This cutie is a: {{breed}}</h3>
+            {% else %}
+            <h1>no image for whatever reason</h1>
+            {% endif %}
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,273 @@
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // overflow: scroll;
+    background-image: url('source_image/backgroud-1.png');
+    background-size: cover;
+    overflow: scroll;
+    // background-color: rgba(208, 211, 212,0.8);
+    // background-image: url('source_image/backgroud.jpg');
+}
+
+.content-container {
+    flex: 1;
+    font-size: 1em;
+    padding: 0px 5% 0px 5%;
+    margin: 65px 3% 65px 3%;
+    .list-group {
+        margin-bottom: 0px;
+    }
+}
+
+/*****************************************
+  upload button styles
+******************************************/
+.file-upload {
+	position: relative;
+	display: inline-block;
+    width: 84vw;
+}
+
+.file-upload__label {
+  padding: 30px 40vw;
+  color: #fff;
+  background: #222;
+  border-radius: .4em;
+  background-color: red;
+}
+
+.file-upload__input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1;
+    width:0;
+    height: 100%;
+    opacity: 0;
+}
+
+
+@mixin gradient-linear($origin, $end) {
+    background: linear-gradient(to bottom, $origin 10%, $end);
+}
+
+.element-section-fire {
+    @include gradient-linear(rgba(192, 57, 43, 0.8), rgba(255,255,255,0.4));
+}
+.element-section-fighting {
+    @include gradient-linear(rgba(211, 84, 0, 0.8), rgba(255,255,255,0.4));
+}
+.element-section-grass {
+    @include gradient-linear(rgba(39, 174, 96, 0.8), rgba(255,255,255,0.4));
+}
+.element-section-psychic {
+    @include gradient-linear(rgba(142, 68, 173, 0.8), rgba(255,255,255,0.4));
+}
+.element-section-eletric {
+    @include gradient-linear(rgba(244, 208, 63, 0.8), rgba(255,255,255,0.4));
+}
+.element-section-water {
+    @include gradient-linear(rgba(52, 152, 219, 0.8), rgba(255,255,255,0.4));
+}
+
+.homepage-container {
+    .navbar {
+        background-color: rgba(255,255,255,0.1) !important;
+        position: absolute;
+    }
+}
+
+.profile-container {
+    width: 80%;
+    align-self: center;
+    background-color: rgba(245, 245, 245,0.8);
+    flex: 1;
+    margin: 65px 0% 0 0%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.form-control {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.login-container {
+    margin-top: 15%;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: rgba(249, 231, 159, 0.8) !important;
+    height: 80px;
+    border: none;
+}
+
+.element-button {
+    &:hover .element-expansion {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.element-image-first {
+    margin-top: 40px;
+    width: 200px;
+    height: auto;
+    &:hover {
+        border-color: transparent !important;
+        border: outset;
+    }
+}
+
+.element-expansion {
+    visibility: hidden;
+    height: 72vh;
+    width: inherit;
+    opacity: 0;
+    padding: 0 20px 0 20px;
+}
+
+.element-image {
+    margin-top: 40px;
+    width: 200px;
+    height: auto;
+    &:hover {
+        border-color: transparent !important;
+        border: outset;
+    }
+}
+
+.element-container {
+    margin-top: 20%;
+    a {
+        text-decoration: none;
+    }
+    .col-sm-6,.col-md-4,.col-lg-2 {
+        padding: 0 0 0 0;
+    }
+}
+
+.user_pokemon_container {
+    margin-top: 50px;
+}
+
+.user_pokemon_panel {
+    height: 120px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.8);
+    padding: 0px 20px 0px 40px;
+
+    &:hover {
+        background-color: darken(rgba(240,240,240,0.8), 3)
+    }
+}
+
+.pokemen_details_container {
+    padding-top: 5px;
+}
+
+.resize-image {
+    width: 120px;
+    height: 120px;
+}
+
+// - - - - - - - - - - - - - - - Video Part - - - - - - - - - - - - - - -
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+
+// - - - - - - - - - - - - - - - SearchBar Part - - - - - - - - - - - - - - -
+.flickr-search-container {
+
+    margin-top: 3%;
+
+    .container-search-field {
+      vertical-align: middle;
+      white-space: nowrap;
+      position: relative;
+
+      input {
+          width: 84vw;
+          height: 150px;
+          background: #fffaf0;
+          border: none;
+          font-size: 1.5em;
+          float: left;
+          color: #63717f;
+          padding-left: 45px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+
+          &:hover {
+              background-color: white;
+          }
+        }
+
+        .icon {
+          position: absolute;
+          top: 50%;
+          margin-left: 17px;
+          margin-top: 64px;
+          z-index: 1;
+          color: #4f5b66;
+        }
+    }
+}
+
+.list-view-container {
+    .flickr-search-container {
+        .container-search-field {
+            input {
+                width: 80vw !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,291 @@
+.top-logo-homepage {
+    background-size: contain;
+    position: absolute !important;
+    height: 12vh;
+    width: 50vw;
+    top: 23vh;
+    left: 26vw;
+    float: left;
+}
+
+.top-logo-homepage-pikachu {
+    background-size: contain;
+    position: absolute !important;
+    top: 23.5vh;
+    left: 33vw;
+    width: 33vw;
+    height: 10vh;
+}
+
+.top-logo {
+    height: 80px;
+    width: 300px;
+}
+
+.btn-primary {
+    margin-top: 50px;
+    height: 80px;
+}
+
+.bottom-logo {
+    background-size: contain;
+    width: 60px;
+    margin: 10px 25px 0 0;
+}
+
+.login-page-inner-container {
+    width: 75%;
+    margin-left: 12.5%;
+
+    .form-control {
+        height: 100px;
+        border: 0;
+        border-bottom-width: 1px;
+        border-bottom-style: dotted;
+        border-bottom-color: grey;
+        border-radius: 0;
+        background-color: transparent;
+        box-shadow: none;
+        font-size: 1.5em;
+
+        &:hover {
+            background-color: rgba(240,240,240, 0.8);
+        }
+    }
+    .btn {
+        height: 80px;
+        padding-top: 30px;
+        margin-top: 20px;
+    }
+}
+
+.login-image {
+    height: 15%;
+    width: 100%;
+}
+
+.login-btn {
+    position: absolute;
+    height: 80px;
+    width: 200px;
+    right: 0px;
+    padding-top: 25px;
+    border: none;
+    border-left: groove;
+    border-width: 1pt;
+    background: none;
+    color:black;
+    border-radius: 0;
+
+    &:hover {
+        background-color: rgb(46, 134, 193);
+        border-color: rgb(46, 134, 193);
+    }
+}
+
+.profile-inner-container {
+    margin-top: 40px;
+}
+
+.personal-info-container {
+    background-color: rgba(255,255,255,0.8);
+    padding: 50px 0 50px 50px;
+    // border: outset;
+    margin-top: 25px;
+
+    .list-group {
+        width: 80%;
+    }
+
+    .list-group-item {
+        width: 100%;
+        height: 50px;
+        border: none;
+
+        &:hover, &:focus {
+            background-color: rgb(230,230,230);
+        }
+    }
+}
+
+.profile-photo {
+    width: 300px;
+    height: 230px;
+}
+
+.option-panel-container {
+    margin: 0 15px 0 15px;
+
+    .col-sm-6 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.split-line {
+    height: 30px;
+    text-align: center;
+    background-color: #deb887;
+    // border: outset;
+    // border-width: 0.2px;
+}
+
+.split-line-1 {
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    background-color: #daa520;
+    // border: outset;
+    // border-width: 0.2px;
+}
+
+.collection-container {
+    border: groove;
+    border-top: none;
+    border-bottom: none;
+    min-height: 495px;
+}
+
+.options-container {
+    border: groove;
+    border-top: none;
+    border-bottom: none;
+    min-height: 495px;
+
+    .btn {
+        height: 100px;
+        margin: auto;
+        padding-top: 40px;
+    }
+}
+
+.btn-significant {
+    height: 165px !important;
+    padding-top: 70px !important;
+}
+
+.personal-all-collection {
+    min-height: 20vh;
+    h3 {
+        margin-top: 0px;
+    }
+}
+
+.all-collections {
+    background-color: lighten(rgba(245, 245, 245,0.8), 6);
+    min-height: 15vh;
+    padding-top: 15px;
+}
+
+.team-collection {
+    h3 {
+        margin-top: 0px;
+    }
+}
+
+.team {
+    background-color: lighten(rgba(245, 245, 245,0.8), 6);
+    min-height: 12vh;
+    padding-top: 25px;
+}
+
+.homepage-logo {
+    background-size: contain;
+    width: 100vw;
+    height: 35vh;
+}
+
+.homepage-logo-dressings {
+    .homepage-btn {
+        position: absolute;
+        top: 25vh;
+        left: 90vw;
+        height: 10vh;
+        width: 10vw;
+        font-size: 1.5em;
+        border: outset;
+        border-width: 0.2px;
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+        color: black;
+        text-align: center;
+        padding-top: 3vh;
+
+        &:hover {
+            background-color: rgba(240, 240, 240, 0.8);
+            border-left: none;
+            text-decoration: none;
+        }
+    }
+}
+
+.table-container {
+    display: block !important;
+    margin-top: 25vh;
+    overflow: scroll;
+    margin-left: 10px;
+    width: 80vw;
+
+    .table-striped>tbody>tr:nth-child(even)>td {
+       background-color: rgb(240, 240, 240);
+     }
+
+     .table>tbody>tr {
+         &:hover {
+             background-color: darken(#f9f9f9, 10)
+         }
+     }
+}
+
+.battle-container {
+    height: 33vh;
+    background-color: rgba(255,255,255,0.8);
+    border: groove;
+    border-top: none;
+
+    .resize-image {
+        width: 120px !important;
+        height: 120px !important;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    h4 {
+        display: inline-block;
+    }
+}
+
+.player1-battle-info-container {
+    float: left;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+
+.player2-battle-info-container {
+    float: right;
+    padding-top: 30px;
+    display: inline-block;
+
+    .resize-image {
+        margin-right: 70px;
+        margin-left: -30px;
+        margin-top: 20px;
+    }
+}
+
+.battle-log-container {
+    background-color: rgba(220,220,220, 0.6);
+    height: 33vh;
+    border-bottom: groove;
+
+    h1 {
+        margin-top: 0;
+    }
+}
+
+.status-container {
+    margin-top: -10%;
+    margin-left: 10px;
+}
